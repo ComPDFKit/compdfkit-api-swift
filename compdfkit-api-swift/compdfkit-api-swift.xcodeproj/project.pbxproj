@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBA10A332AB051D700D21CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A322AB051D700D21CF3 /* AppDelegate.swift */; };
+		BBA10A352AB051D800D21CF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A342AB051D800D21CF3 /* ViewController.swift */; };
+		BBA10A372AB051D900D21CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA10A362AB051D900D21CF3 /* Assets.xcassets */; };
+		BBA10A3A2AB051DA00D21CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA10A382AB051DA00D21CF3 /* Main.storyboard */; };
+		BBA10A752AB0527200D21CF3 /* CPDFConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A442AB0527200D21CF3 /* CPDFConversion.swift */; };
+		BBA10A762AB0527200D21CF3 /* CPDFDocumentAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A452AB0527200D21CF3 /* CPDFDocumentAI.swift */; };
+		BBA10A772AB0527200D21CF3 /* CPDFDocumentEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A462AB0527200D21CF3 /* CPDFDocumentEditor.swift */; };
+		BBA10A782AB0527200D21CF3 /* CPDFURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A472AB0527200D21CF3 /* CPDFURL.swift */; };
+		BBA10A792AB0527200D21CF3 /* CPDFResultMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A492AB0527200D21CF3 /* CPDFResultMap.swift */; };
+		BBA10A7A2AB0527200D21CF3 /* CPDFOauthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A4A2AB0527200D21CF3 /* CPDFOauthResult.swift */; };
+		BBA10A7B2AB0527200D21CF3 /* CPDFUploadFileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A4B2AB0527200D21CF3 /* CPDFUploadFileResult.swift */; };
+		BBA10A7C2AB0527200D21CF3 /* CPDFCreateTaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A4C2AB0527200D21CF3 /* CPDFCreateTaskResult.swift */; };
+		BBA10A7D2AB0527200D21CF3 /* CPDFTaskInfoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A4D2AB0527200D21CF3 /* CPDFTaskInfoResult.swift */; };
+		BBA10A7E2AB0527200D21CF3 /* CPDFResultFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A4E2AB0527200D21CF3 /* CPDFResultFileInfo.swift */; };
+		BBA10A7F2AB0527200D21CF3 /* CPDFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A512AB0527200D21CF3 /* CPDFClient.swift */; };
+		BBA10A802AB0527200D21CF3 /* CPDFHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A522AB0527200D21CF3 /* CPDFHttpClient.swift */; };
+		BBA10A812AB0527200D21CF3 /* PDFToTXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A542AB0527200D21CF3 /* PDFToTXT.swift */; };
+		BBA10A822AB0527200D21CF3 /* PDFCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A552AB0527200D21CF3 /* PDFCompression.swift */; };
+		BBA10A832AB0527200D21CF3 /* CSVToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A562AB0527200D21CF3 /* CSVToPDF.swift */; };
+		BBA10A842AB0527200D21CF3 /* PDFToHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A572AB0527200D21CF3 /* PDFToHTML.swift */; };
+		BBA10A852AB0527200D21CF3 /* PDFInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A582AB0527200D21CF3 /* PDFInsert.swift */; };
+		BBA10A862AB0527200D21CF3 /* TXTToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A592AB0527200D21CF3 /* TXTToPDF.swift */; };
+		BBA10A872AB0527200D21CF3 /* FormRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A5A2AB0527200D21CF3 /* FormRecognizer.swift */; };
+		BBA10A882AB0527200D21CF3 /* PDFToRTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A5B2AB0527200D21CF3 /* PDFToRTF.swift */; };
+		BBA10A892AB0527200D21CF3 /* DeleteWatermark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A5C2AB0527200D21CF3 /* DeleteWatermark.swift */; };
+		BBA10A8A2AB0527200D21CF3 /* WordToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A5D2AB0527200D21CF3 /* WordToPDF.swift */; };
+		BBA10A8B2AB0527200D21CF3 /* PDFToPNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A5E2AB0527200D21CF3 /* PDFToPNG.swift */; };
+		BBA10A8C2AB0527200D21CF3 /* PDFExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A5F2AB0527200D21CF3 /* PDFExtract.swift */; };
+		BBA10A8D2AB0527200D21CF3 /* ExcelToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A602AB0527200D21CF3 /* ExcelToPDF.swift */; };
+		BBA10A8E2AB0527200D21CF3 /* PPTToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A612AB0527200D21CF3 /* PPTToPDF.swift */; };
+		BBA10A8F2AB0527200D21CF3 /* LayoutAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A622AB0527200D21CF3 /* LayoutAnalysis.swift */; };
+		BBA10A902AB0527200D21CF3 /* AddImageWatermark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A632AB0527200D21CF3 /* AddImageWatermark.swift */; };
+		BBA10A912AB0527200D21CF3 /* PDFRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A642AB0527200D21CF3 /* PDFRotation.swift */; };
+		BBA10A922AB0527200D21CF3 /* PDFSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A652AB0527200D21CF3 /* PDFSplit.swift */; };
+		BBA10A932AB0527200D21CF3 /* OCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A662AB0527200D21CF3 /* OCR.swift */; };
+		BBA10A942AB0527200D21CF3 /* RTFToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A672AB0527200D21CF3 /* RTFToPDF.swift */; };
+		BBA10A952AB0527200D21CF3 /* PDFToWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A682AB0527200D21CF3 /* PDFToWord.swift */; };
+		BBA10A962AB0527200D21CF3 /* StampInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A692AB0527200D21CF3 /* StampInspection.swift */; };
+		BBA10A972AB0527200D21CF3 /* PDFToPPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A6A2AB0527200D21CF3 /* PDFToPPT.swift */; };
+		BBA10A982AB0527200D21CF3 /* HTMLToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A6B2AB0527200D21CF3 /* HTMLToPDF.swift */; };
+		BBA10A992AB0527200D21CF3 /* PDFToCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A6C2AB0527200D21CF3 /* PDFToCSV.swift */; };
+		BBA10A9A2AB0527200D21CF3 /* PDFDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A6D2AB0527200D21CF3 /* PDFDelete.swift */; };
+		BBA10A9B2AB0527200D21CF3 /* PDFToJPG.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A6E2AB0527200D21CF3 /* PDFToJPG.swift */; };
+		BBA10A9C2AB0527200D21CF3 /* PDFToExcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A6F2AB0527200D21CF3 /* PDFToExcel.swift */; };
+		BBA10A9D2AB0527200D21CF3 /* TrimCorrection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A702AB0527200D21CF3 /* TrimCorrection.swift */; };
+		BBA10A9E2AB0527200D21CF3 /* ImageSharpeningEnhancement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A712AB0527200D21CF3 /* ImageSharpeningEnhancement.swift */; };
+		BBA10A9F2AB0527200D21CF3 /* AddWatermark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A722AB0527200D21CF3 /* AddWatermark.swift */; };
+		BBA10AA02AB0527200D21CF3 /* PNGToPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A732AB0527200D21CF3 /* PNGToPDF.swift */; };
+		BBA10AA12AB0527200D21CF3 /* PDFMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA10A742AB0527200D21CF3 /* PDFMerge.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBA10A2F2AB051D700D21CF3 /* compdfkit-api-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "compdfkit-api-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA10A322AB051D700D21CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBA10A342AB051D800D21CF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBA10A362AB051D900D21CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBA10A392AB051DA00D21CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBA10A3B2AB051DA00D21CF3 /* compdfkit_api_swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = compdfkit_api_swift.entitlements; sourceTree = "<group>"; };
+		BBA10A442AB0527200D21CF3 /* CPDFConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFConversion.swift; sourceTree = "<group>"; };
+		BBA10A452AB0527200D21CF3 /* CPDFDocumentAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFDocumentAI.swift; sourceTree = "<group>"; };
+		BBA10A462AB0527200D21CF3 /* CPDFDocumentEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFDocumentEditor.swift; sourceTree = "<group>"; };
+		BBA10A472AB0527200D21CF3 /* CPDFURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFURL.swift; sourceTree = "<group>"; };
+		BBA10A492AB0527200D21CF3 /* CPDFResultMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFResultMap.swift; sourceTree = "<group>"; };
+		BBA10A4A2AB0527200D21CF3 /* CPDFOauthResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFOauthResult.swift; sourceTree = "<group>"; };
+		BBA10A4B2AB0527200D21CF3 /* CPDFUploadFileResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFUploadFileResult.swift; sourceTree = "<group>"; };
+		BBA10A4C2AB0527200D21CF3 /* CPDFCreateTaskResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFCreateTaskResult.swift; sourceTree = "<group>"; };
+		BBA10A4D2AB0527200D21CF3 /* CPDFTaskInfoResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFTaskInfoResult.swift; sourceTree = "<group>"; };
+		BBA10A4E2AB0527200D21CF3 /* CPDFResultFileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFResultFileInfo.swift; sourceTree = "<group>"; };
+		BBA10A512AB0527200D21CF3 /* CPDFClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFClient.swift; sourceTree = "<group>"; };
+		BBA10A522AB0527200D21CF3 /* CPDFHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDFHttpClient.swift; sourceTree = "<group>"; };
+		BBA10A542AB0527200D21CF3 /* PDFToTXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToTXT.swift; sourceTree = "<group>"; };
+		BBA10A552AB0527200D21CF3 /* PDFCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCompression.swift; sourceTree = "<group>"; };
+		BBA10A562AB0527200D21CF3 /* CSVToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVToPDF.swift; sourceTree = "<group>"; };
+		BBA10A572AB0527200D21CF3 /* PDFToHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToHTML.swift; sourceTree = "<group>"; };
+		BBA10A582AB0527200D21CF3 /* PDFInsert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFInsert.swift; sourceTree = "<group>"; };
+		BBA10A592AB0527200D21CF3 /* TXTToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXTToPDF.swift; sourceTree = "<group>"; };
+		BBA10A5A2AB0527200D21CF3 /* FormRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormRecognizer.swift; sourceTree = "<group>"; };
+		BBA10A5B2AB0527200D21CF3 /* PDFToRTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToRTF.swift; sourceTree = "<group>"; };
+		BBA10A5C2AB0527200D21CF3 /* DeleteWatermark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteWatermark.swift; sourceTree = "<group>"; };
+		BBA10A5D2AB0527200D21CF3 /* WordToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordToPDF.swift; sourceTree = "<group>"; };
+		BBA10A5E2AB0527200D21CF3 /* PDFToPNG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToPNG.swift; sourceTree = "<group>"; };
+		BBA10A5F2AB0527200D21CF3 /* PDFExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFExtract.swift; sourceTree = "<group>"; };
+		BBA10A602AB0527200D21CF3 /* ExcelToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcelToPDF.swift; sourceTree = "<group>"; };
+		BBA10A612AB0527200D21CF3 /* PPTToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPTToPDF.swift; sourceTree = "<group>"; };
+		BBA10A622AB0527200D21CF3 /* LayoutAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutAnalysis.swift; sourceTree = "<group>"; };
+		BBA10A632AB0527200D21CF3 /* AddImageWatermark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImageWatermark.swift; sourceTree = "<group>"; };
+		BBA10A642AB0527200D21CF3 /* PDFRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFRotation.swift; sourceTree = "<group>"; };
+		BBA10A652AB0527200D21CF3 /* PDFSplit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFSplit.swift; sourceTree = "<group>"; };
+		BBA10A662AB0527200D21CF3 /* OCR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCR.swift; sourceTree = "<group>"; };
+		BBA10A672AB0527200D21CF3 /* RTFToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTFToPDF.swift; sourceTree = "<group>"; };
+		BBA10A682AB0527200D21CF3 /* PDFToWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToWord.swift; sourceTree = "<group>"; };
+		BBA10A692AB0527200D21CF3 /* StampInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampInspection.swift; sourceTree = "<group>"; };
+		BBA10A6A2AB0527200D21CF3 /* PDFToPPT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToPPT.swift; sourceTree = "<group>"; };
+		BBA10A6B2AB0527200D21CF3 /* HTMLToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLToPDF.swift; sourceTree = "<group>"; };
+		BBA10A6C2AB0527200D21CF3 /* PDFToCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToCSV.swift; sourceTree = "<group>"; };
+		BBA10A6D2AB0527200D21CF3 /* PDFDelete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDelete.swift; sourceTree = "<group>"; };
+		BBA10A6E2AB0527200D21CF3 /* PDFToJPG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToJPG.swift; sourceTree = "<group>"; };
+		BBA10A6F2AB0527200D21CF3 /* PDFToExcel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFToExcel.swift; sourceTree = "<group>"; };
+		BBA10A702AB0527200D21CF3 /* TrimCorrection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrimCorrection.swift; sourceTree = "<group>"; };
+		BBA10A712AB0527200D21CF3 /* ImageSharpeningEnhancement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSharpeningEnhancement.swift; sourceTree = "<group>"; };
+		BBA10A722AB0527200D21CF3 /* AddWatermark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWatermark.swift; sourceTree = "<group>"; };
+		BBA10A732AB0527200D21CF3 /* PNGToPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNGToPDF.swift; sourceTree = "<group>"; };
+		BBA10A742AB0527200D21CF3 /* PDFMerge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFMerge.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBA10A2C2AB051D700D21CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBA10A262AB051D700D21CF3 = {
+			isa = PBXGroup;
+			children = (
+				BBA10A312AB051D700D21CF3 /* compdfkit-api-swift */,
+				BBA10A302AB051D700D21CF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBA10A302AB051D700D21CF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBA10A2F2AB051D700D21CF3 /* compdfkit-api-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBA10A312AB051D700D21CF3 /* compdfkit-api-swift */ = {
+			isa = PBXGroup;
+			children = (
+				BBA10A532AB0527200D21CF3 /* samples */,
+				BBA10A412AB0527200D21CF3 /* src */,
+				BBA10A322AB051D700D21CF3 /* AppDelegate.swift */,
+				BBA10A342AB051D800D21CF3 /* ViewController.swift */,
+				BBA10A362AB051D900D21CF3 /* Assets.xcassets */,
+				BBA10A382AB051DA00D21CF3 /* Main.storyboard */,
+				BBA10A3B2AB051DA00D21CF3 /* compdfkit_api_swift.entitlements */,
+			);
+			path = "compdfkit-api-swift";
+			sourceTree = "<group>";
+		};
+		BBA10A412AB0527200D21CF3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBA10A422AB0527200D21CF3 /* Util */,
+				BBA10A432AB0527200D21CF3 /* Constant */,
+				BBA10A482AB0527200D21CF3 /* Resource */,
+				BBA10A4F2AB0527200D21CF3 /* Exception */,
+				BBA10A502AB0527200D21CF3 /* Client */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BBA10A422AB0527200D21CF3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BBA10A432AB0527200D21CF3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				BBA10A442AB0527200D21CF3 /* CPDFConversion.swift */,
+				BBA10A452AB0527200D21CF3 /* CPDFDocumentAI.swift */,
+				BBA10A462AB0527200D21CF3 /* CPDFDocumentEditor.swift */,
+				BBA10A472AB0527200D21CF3 /* CPDFURL.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		BBA10A482AB0527200D21CF3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BBA10A492AB0527200D21CF3 /* CPDFResultMap.swift */,
+				BBA10A4A2AB0527200D21CF3 /* CPDFOauthResult.swift */,
+				BBA10A4B2AB0527200D21CF3 /* CPDFUploadFileResult.swift */,
+				BBA10A4C2AB0527200D21CF3 /* CPDFCreateTaskResult.swift */,
+				BBA10A4D2AB0527200D21CF3 /* CPDFTaskInfoResult.swift */,
+				BBA10A4E2AB0527200D21CF3 /* CPDFResultFileInfo.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BBA10A4F2AB0527200D21CF3 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		BBA10A502AB0527200D21CF3 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				BBA10A512AB0527200D21CF3 /* CPDFClient.swift */,
+				BBA10A522AB0527200D21CF3 /* CPDFHttpClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		BBA10A532AB0527200D21CF3 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				BBA10A542AB0527200D21CF3 /* PDFToTXT.swift */,
+				BBA10A552AB0527200D21CF3 /* PDFCompression.swift */,
+				BBA10A562AB0527200D21CF3 /* CSVToPDF.swift */,
+				BBA10A572AB0527200D21CF3 /* PDFToHTML.swift */,
+				BBA10A582AB0527200D21CF3 /* PDFInsert.swift */,
+				BBA10A592AB0527200D21CF3 /* TXTToPDF.swift */,
+				BBA10A5A2AB0527200D21CF3 /* FormRecognizer.swift */,
+				BBA10A5B2AB0527200D21CF3 /* PDFToRTF.swift */,
+				BBA10A5C2AB0527200D21CF3 /* DeleteWatermark.swift */,
+				BBA10A5D2AB0527200D21CF3 /* WordToPDF.swift */,
+				BBA10A5E2AB0527200D21CF3 /* PDFToPNG.swift */,
+				BBA10A5F2AB0527200D21CF3 /* PDFExtract.swift */,
+				BBA10A602AB0527200D21CF3 /* ExcelToPDF.swift */,
+				BBA10A612AB0527200D21CF3 /* PPTToPDF.swift */,
+				BBA10A622AB0527200D21CF3 /* LayoutAnalysis.swift */,
+				BBA10A632AB0527200D21CF3 /* AddImageWatermark.swift */,
+				BBA10A642AB0527200D21CF3 /* PDFRotation.swift */,
+				BBA10A652AB0527200D21CF3 /* PDFSplit.swift */,
+				BBA10A662AB0527200D21CF3 /* OCR.swift */,
+				BBA10A672AB0527200D21CF3 /* RTFToPDF.swift */,
+				BBA10A682AB0527200D21CF3 /* PDFToWord.swift */,
+				BBA10A692AB0527200D21CF3 /* StampInspection.swift */,
+				BBA10A6A2AB0527200D21CF3 /* PDFToPPT.swift */,
+				BBA10A6B2AB0527200D21CF3 /* HTMLToPDF.swift */,
+				BBA10A6C2AB0527200D21CF3 /* PDFToCSV.swift */,
+				BBA10A6D2AB0527200D21CF3 /* PDFDelete.swift */,
+				BBA10A6E2AB0527200D21CF3 /* PDFToJPG.swift */,
+				BBA10A6F2AB0527200D21CF3 /* PDFToExcel.swift */,
+				BBA10A702AB0527200D21CF3 /* TrimCorrection.swift */,
+				BBA10A712AB0527200D21CF3 /* ImageSharpeningEnhancement.swift */,
+				BBA10A722AB0527200D21CF3 /* AddWatermark.swift */,
+				BBA10A732AB0527200D21CF3 /* PNGToPDF.swift */,
+				BBA10A742AB0527200D21CF3 /* PDFMerge.swift */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBA10A2E2AB051D700D21CF3 /* compdfkit-api-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA10A3E2AB051DA00D21CF3 /* Build configuration list for PBXNativeTarget "compdfkit-api-swift" */;
+			buildPhases = (
+				BBA10A2B2AB051D700D21CF3 /* Sources */,
+				BBA10A2C2AB051D700D21CF3 /* Frameworks */,
+				BBA10A2D2AB051D700D21CF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "compdfkit-api-swift";
+			productName = "compdfkit-api-swift";
+			productReference = BBA10A2F2AB051D700D21CF3 /* compdfkit-api-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBA10A272AB051D700D21CF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BBA10A2E2AB051D700D21CF3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BBA10A2A2AB051D700D21CF3 /* Build configuration list for PBXProject "compdfkit-api-swift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBA10A262AB051D700D21CF3;
+			productRefGroup = BBA10A302AB051D700D21CF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBA10A2E2AB051D700D21CF3 /* compdfkit-api-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBA10A2D2AB051D700D21CF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA10A372AB051D900D21CF3 /* Assets.xcassets in Resources */,
+				BBA10A3A2AB051DA00D21CF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBA10A2B2AB051D700D21CF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA10A8B2AB0527200D21CF3 /* PDFToPNG.swift in Sources */,
+				BBA10A8F2AB0527200D21CF3 /* LayoutAnalysis.swift in Sources */,
+				BBA10A902AB0527200D21CF3 /* AddImageWatermark.swift in Sources */,
+				BBA10A912AB0527200D21CF3 /* PDFRotation.swift in Sources */,
+				BBA10A842AB0527200D21CF3 /* PDFToHTML.swift in Sources */,
+				BBA10A8D2AB0527200D21CF3 /* ExcelToPDF.swift in Sources */,
+				BBA10A7C2AB0527200D21CF3 /* CPDFCreateTaskResult.swift in Sources */,
+				BBA10A832AB0527200D21CF3 /* CSVToPDF.swift in Sources */,
+				BBA10A782AB0527200D21CF3 /* CPDFURL.swift in Sources */,
+				BBA10A9B2AB0527200D21CF3 /* PDFToJPG.swift in Sources */,
+				BBA10AA12AB0527200D21CF3 /* PDFMerge.swift in Sources */,
+				BBA10A932AB0527200D21CF3 /* OCR.swift in Sources */,
+				BBA10A7B2AB0527200D21CF3 /* CPDFUploadFileResult.swift in Sources */,
+				BBA10A7E2AB0527200D21CF3 /* CPDFResultFileInfo.swift in Sources */,
+				BBA10A9C2AB0527200D21CF3 /* PDFToExcel.swift in Sources */,
+				BBA10A942AB0527200D21CF3 /* RTFToPDF.swift in Sources */,
+				BBA10A972AB0527200D21CF3 /* PDFToPPT.swift in Sources */,
+				BBA10A982AB0527200D21CF3 /* HTMLToPDF.swift in Sources */,
+				BBA10A892AB0527200D21CF3 /* DeleteWatermark.swift in Sources */,
+				BBA10A7F2AB0527200D21CF3 /* CPDFClient.swift in Sources */,
+				BBA10A872AB0527200D21CF3 /* FormRecognizer.swift in Sources */,
+				BBA10A9F2AB0527200D21CF3 /* AddWatermark.swift in Sources */,
+				BBA10A772AB0527200D21CF3 /* CPDFDocumentEditor.swift in Sources */,
+				BBA10A962AB0527200D21CF3 /* StampInspection.swift in Sources */,
+				BBA10A9E2AB0527200D21CF3 /* ImageSharpeningEnhancement.swift in Sources */,
+				BBA10A922AB0527200D21CF3 /* PDFSplit.swift in Sources */,
+				BBA10A752AB0527200D21CF3 /* CPDFConversion.swift in Sources */,
+				BBA10A882AB0527200D21CF3 /* PDFToRTF.swift in Sources */,
+				BBA10A9D2AB0527200D21CF3 /* TrimCorrection.swift in Sources */,
+				BBA10A9A2AB0527200D21CF3 /* PDFDelete.swift in Sources */,
+				BBA10A762AB0527200D21CF3 /* CPDFDocumentAI.swift in Sources */,
+				BBA10A8C2AB0527200D21CF3 /* PDFExtract.swift in Sources */,
+				BBA10A862AB0527200D21CF3 /* TXTToPDF.swift in Sources */,
+				BBA10A812AB0527200D21CF3 /* PDFToTXT.swift in Sources */,
+				BBA10A7D2AB0527200D21CF3 /* CPDFTaskInfoResult.swift in Sources */,
+				BBA10A352AB051D800D21CF3 /* ViewController.swift in Sources */,
+				BBA10A822AB0527200D21CF3 /* PDFCompression.swift in Sources */,
+				BBA10A7A2AB0527200D21CF3 /* CPDFOauthResult.swift in Sources */,
+				BBA10A8A2AB0527200D21CF3 /* WordToPDF.swift in Sources */,
+				BBA10A852AB0527200D21CF3 /* PDFInsert.swift in Sources */,
+				BBA10A792AB0527200D21CF3 /* CPDFResultMap.swift in Sources */,
+				BBA10A332AB051D700D21CF3 /* AppDelegate.swift in Sources */,
+				BBA10A952AB0527200D21CF3 /* PDFToWord.swift in Sources */,
+				BBA10A8E2AB0527200D21CF3 /* PPTToPDF.swift in Sources */,
+				BBA10A802AB0527200D21CF3 /* CPDFHttpClient.swift in Sources */,
+				BBA10A992AB0527200D21CF3 /* PDFToCSV.swift in Sources */,
+				BBA10AA02AB0527200D21CF3 /* PNGToPDF.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBA10A382AB051DA00D21CF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA10A392AB051DA00D21CF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBA10A3C2AB051DA00D21CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBA10A3D2AB051DA00D21CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BBA10A3F2AB051DA00D21CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "compdfkit-api-swift/compdfkit_api_swift.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4GGQPGRTSV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kdan.compdfkit-api-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BBA10A402AB051DA00D21CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "compdfkit-api-swift/compdfkit_api_swift.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4GGQPGRTSV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kdan.compdfkit-api-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBA10A2A2AB051D700D21CF3 /* Build configuration list for PBXProject "compdfkit-api-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA10A3C2AB051DA00D21CF3 /* Debug */,
+				BBA10A3D2AB051DA00D21CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA10A3E2AB051DA00D21CF3 /* Build configuration list for PBXNativeTarget "compdfkit-api-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA10A3F2AB051DA00D21CF3 /* Debug */,
+				BBA10A402AB051DA00D21CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBA10A272AB051D700D21CF3 /* Project object */;
+}
